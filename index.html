@@ -2,73 +2,186 @@
 <html lang="en">
 
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Links and scripts -->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>HARE Kitchen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Other info -->
+    <title>Erik Valionis</title>
 </head>
 
 <body>
-    <header>
-        <figure>
-            <img src="./iImages/logo.png" alt="HARE Kitchen logo">
-        </figure>
-    </header>
 
-    <nav class="categories">
-        <ul>
-            <li> <a href="./subpages/projects">Projects</a></li>
-            <li><a href="./subpages/skills">Skills</a></li>
-            <li> <a href="./subpages/about">About me</a></li>
-            <li> <a href="./subpages/contact">Contact</a></li>
-            <li> <a href="./subpages/blog">Blog</a></li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md .bg-* navbar-dark fixed-top">
+        <!-- Logo / My name -->
+        <a class="navbar-brand" href="#">Erik Valionis</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./subpages/projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./subpages/skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./subpages/about">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./subpages/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./subpages/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
+
+    <!-- Header element with intro to myself -->
+    <header>
+        <div class="introtext">
+            <h1>Hi! I'm Erik Valionis</h1>
+            <p>
+                I am a hobby illustrator. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum perferendis facere neque autem expedita adipisci nam esse qui alias assumenda obcaecati dignissimos rerum, provident iusto culpa aliquid consequatur reiciendis.
+                Pariatur.
+            </p>
+        </div>
+        <div class="introgradient"></div>
+    </header>
+
+
+
+    <!-- Overview of newest projects -->
     <main>
-
-        <div class="dishes">
-            <article class="dish">
+        <h2>My work</h2>
+        <p>Take a look at what I have created so far.</p>
+        <div class="projectview">
+            <article class="projectpre">
                 <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
+                    <img src="./assets/project/" alt="">
                 </figure>
                 <section>
-                    <h3>Pizza</h3>
-                    <p>description</p>
+                    <h3>Project No. 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati iste quaerat qui placeat tempora debitis aperiam adipisci dolor quas doloremque reiciendis nulla omnis, fuga officiis libero velit mollitia iusto?</p>
                 </section>
             </article>
 
-            <article class="dish">
+            <article class="projectpre">
                 <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
+                    <img src="./assets/project/" alt="">
                 </figure>
                 <section>
-                    <h3>Pizza</h3>
-                    <p>description</p>
+                    <h3>Project No. 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati iste quaerat qui placeat tempora debitis aperiam adipisci dolor quas doloremque reiciendis nulla omnis, fuga officiis libero velit mollitia iusto?</p>
                 </section>
             </article>
 
-            <article class="dish">
+            <article class="projectpre">
                 <figure>
-                    <img src="./Images/Italian/Pizza.jpg" alt="Pizza Recipe">
+                    <img src="./assets/project/" alt="">
                 </figure>
                 <section>
-                    <h3>Pizza</h3>
-                    <p>description</p>
+                    <h3>Project No. 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati iste quaerat qui placeat tempora debitis aperiam adipisci dolor quas doloremque reiciendis nulla omnis, fuga officiis libero velit mollitia iusto?</p>
                 </section>
             </article>
         </div>
     </main>
+
+
+    <!-- Overview of skillset -->
+    <section class="skillsview">
+        <h2>My skillset</h2>
+        <p>This is what I can do.</p>
+        <div class="skillpre">
+            <figure>
+                <img src="assets/icons/" alt="">
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas, unde eaque accusamus explicabo dolorem corporis dolores eligendi eum cumque numquam illo perspiciatis dolore. Corporis blanditiis atque natus similique harum?
+            </p>
+        </div>
+        <div class="skillpre">
+            <figure>
+                <img src="assets/icons/" alt="">
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas, unde eaque accusamus explicabo dolorem corporis dolores eligendi eum cumque numquam illo perspiciatis dolore. Corporis blanditiis atque natus similique harum?
+            </p>
+        </div>
+        <div class="skillpre">
+            <figure>
+                <img src="assets/icons/" alt="">
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas, unde eaque accusamus explicabo dolorem corporis dolores eligendi eum cumque numquam illo perspiciatis dolore. Corporis blanditiis atque natus similique harum?
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Overview of how to get in touch -->
+    <section class="contactsect">
+        <h2>Let's work together!</h2>
+        <p>You like what you see? Don't hesitate to message me.</p>
+
+        <div class="socmed">
+
+            <div class="socmedicon">
+                <figure>
+                    <img src="assets/icons/" alt="">
+                </figure>
+                <h6>
+                    Socmed #1
+                </h6>
+            </div>
+
+            <div class="socmedicon">
+                <figure>
+                    <img src="assets/icons/" alt="">
+                </figure>
+                <h6>
+                    Socmed #1
+                </h6>
+            </div>
+
+            <div class="socmedicon">
+                <figure>
+                    <img src="assets/icons/" alt="">
+                </figure>
+                <h6>
+                    Socmed #1
+                </h6>
+            </div>
+        </div>
+
+        <div class="mailbutton">
+            <a href="mailto:">Get in touch!</a>
+        </div>
+
+    </section>
+
     <footer>
         <div>
             <p>Created by</p>
             <ul>
-                <li><a href="mailto: ">@Heidi</a></li>
-                <li><a href="mailto: ">@Andres</a></li>
-                <li><a href="mailto: ">@Radu</a></li>
                 <li><a href="mailto: ">@Erik</a></li>
             </ul>
         </div>
