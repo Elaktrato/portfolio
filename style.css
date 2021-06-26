@@ -41,12 +41,12 @@
         }
         li.nav-item:last-child::after {
             display: block;
-            content=" "
+            content: " "
         }
     }
     
     header {
-        background-image: url("./assets/images/header-image.jpg");
+        background-image: url("./assets/images/Goat-Skully.jpg");
         background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
@@ -80,4 +80,117 @@
     
     .navbar-collapse {
         justify-content: flex-end;
+    }
+    
+    .wrapblock {
+        padding: 2rem;
+    }
+    
+    .grey {
+        background-color: #e8e8ea;
+    }
+    
+    .projectview,
+    .skillsview {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .projectpre,
+    .skillpre {
+        display: flex;
+        width: calc(100% * (1/3, 001));
+        flex-flow: column;
+        padding: 1rem;
+        transition: 0.5s ease-in;
+        border: 1px solid transparent;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .projectpre:hover {
+        border-left: 1px solid #1c1f33;
+        border-right: 1px solid #1c1f33;
+        transition: 0.5s ease-in;
+    }
+    
+    .projectpre a {
+        text-decoration: none;
+        color: inherit
+    }
+    
+    .projectpre:hover a {
+        text-decoration: none;
+        color: inherit
+    }
+    
+    .looksy {
+        content: "Take a look!";
+        transition: 0.5s ease-in;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0rem 0rem;
+        margin: auto;
+        border: #79eede 2px solid;
+        opacity: 0.8;
+    }
+    
+    .projectpre:hover .looksy {
+        transition: 0.5s ease-in;
+        opacity: 1;
+        background-color: #e8fffc;
+        display: block
+    }
+    
+    .projectpre img,
+    .skillpre img {
+        width: 100%;
+        max-height: 15rem;
+        object-fit: cover;
+    }
+    
+    .projectpre section,
+    .skillpre section {
+        padding-top: 1rem;
+    }
+    
+    @media screen and (max-width:1070px) {
+        .projectview,
+        .skillsview {
+            flex-flow: column;
+        }
+        .projectpre,
+        .skillpre {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:1070px) and (min-width:700px) {
+        .projectpre img {
+            max-height: 30rem
+        }
+    }
+    
+    .skillpre img {
+        object-fit: contain;
+    }
+    
+    .socmed {
+        width: calc(100% * (2/3.001));
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .socmedicon {
+        width: calc(100% * (1/3.001));
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .socmedicon img {
+        object-fit: contain;
+        max-height: 15rem;
+        margin-bottom: 1rem;
     }
