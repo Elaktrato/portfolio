@@ -14,7 +14,7 @@
     }
     
     a:hover {
-        color: #79eede !important;
+        color: #79eede;
         transition: 0.5s ease-out;
         text-decoration: none !important;
     }
@@ -51,7 +51,7 @@
         background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: top left;
     }
     
     .introtext {
@@ -128,7 +128,7 @@
     
     .looksy {
         content: "Take a look!";
-        transition: 0.5s ease-in;
+        transition: 0.2s ease-in;
         padding: 1rem;
         font-size: 1.2rem;
         border-radius: 0rem 0rem;
@@ -138,10 +138,11 @@
     }
     
     .projectpre:hover .looksy {
-        transition: 0.5s ease-in;
+        transition: 0.52s ease-in;
         opacity: 1;
-        background-color: #e8fffc;
-        display: block
+        background-color: #1c1f33;
+        display: block;
+        color: #79eede
     }
     
     .projectpre img,
@@ -165,11 +166,35 @@
         .skillpre {
             width: 100%;
         }
+        .contactsect {
+            flex-flow: column-reverse;
+            align-items: center;
+        }
+        .meself {
+            margin-bottom: 2rem;
+        }
+        .socmed {
+            width: 80% !important;
+        }
     }
     
     @media screen and (max-width:1070px) and (min-width:700px) {
         .projectpre img {
             max-height: 30rem
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .socmed {
+            flex-flow: column;
+        }
+        .socmedicon {
+            width: 100% !important;
+            margin-bottom: 1rem;
+        }
+        .socmedicon:last-child {
+            margin-bottom: 0;
+            ;
         }
     }
     
@@ -241,6 +266,7 @@
         border: 2px solid #79eede;
         background-color: #1c1f33;
         margin: 0;
+        color: #79eede
     }
     
     .buttonwrap {
@@ -248,4 +274,33 @@
         margin-top: 1rem;
         width: fit-content;
         height: 3.4rem;
+    }
+    
+    body>footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1c1f33;
+        color: #fff;
+        padding: 1rem 0
+    }
+    
+    footer a {
+        color: #fff;
+    }
+    
+    footer a:hover {
+        color: #79eede
+    }
+    
+    footer>* {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+    
+    footer>*>* {
+        padding: 0 1rem 0 0;
+        margin-bottom: 0 !important;
     }
