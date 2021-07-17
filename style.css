@@ -46,8 +46,15 @@
         }
     }
     
-    header {
+    .wolfy {
         background-image: url("./assets/images/goat-skully.jpg");
+    }
+    
+    .mememe {
+        background-image: url('./assets/images/me_with_lucky.jpg')
+    }
+    
+    header {
         background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
@@ -303,4 +310,22 @@
     footer>*>* {
         padding: 0 1rem 0 0;
         margin-bottom: 0 !important;
+    }
+    
+    .projectGallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gallery {
+        padding-top: 6.5rem;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .imgGal {
+            height: 33vw !important;
+            object-fit: cover;
+        }
     }
