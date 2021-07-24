@@ -329,3 +329,54 @@
             object-fit: cover;
         }
     }
+    
+    .third {
+        width: calc(100% * (1 / 3.001));
+    }
+    
+    .blockImage {
+        background-color: #bbb;
+        min-height: 20vw;
+        display: block;
+        min-width: calc(100% * (1/3.001));
+    }
+    
+    .textLeft {
+        padding-right: 3rem;
+    }
+    
+    .textRight {
+        padding-left: 3rem;
+    }
+    
+    .flexer {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .webExamples {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .webExamples a {
+        display: contents;
+    }
+    
+    .webdev {
+        display: block;
+        background-size: cover;
+        padding-bottom: 24%;
+    }
+    
+    .toDoList {
+        background-image: url(./assets/webdev/todolist.png);
+    }
+    
+    .examples {
+        padding-top: 1.4rem;
+    }
+    
+    .examples>div>h3 {
+        padding-bottom: 1rem;
+    }

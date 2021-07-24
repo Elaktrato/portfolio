@@ -80,7 +80,7 @@
                         </a>
                     </figure>
                     <figure class="col-md-3">
-                        <a href="../../assets/images/tattoo-lady.jpg" data-toggle="lightbox">
+                        <a href="../../assets/images/tattoo-lady.jpg" id="picLight=2" data-toggle="lightbox">
                             <img src="../../assets/images/tattoo-lady.jpg" class="img-fluid imgGal">
                         </a>
                     </figure>
@@ -148,6 +148,25 @@
             event.preventDefault();
             $(this).ekkoLightbox();
         });
+        // https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript
+
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function(item) {
+                    tmp = item.split("=");
+                    if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+
+        // read pic identifier from get parameter e.g. picLight=2
+        // if there is no get parameter no following should happen
+        // select document element by id
+        // call click event on selected pic element via .click()
     </script>
 </body>
 
